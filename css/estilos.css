@@ -1,0 +1,264 @@
+*
+{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box; 
+}
+
+header
+{
+    background: url(../imagenes/header.jpg);
+    background-position: top;
+    background-attachment: contain;
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#logo
+{
+    height: 100px;
+    position: relative;
+    top: -20px
+}
+nav
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    top: -150px;
+    padding: 0 10px;
+}
+
+main
+{
+    background: url(../imagenes/fondo.jpg);
+    background-position: top;
+    background-attachment: contain;
+    background-size: cover;
+}
+#titulo
+{
+    width: 50%;
+}
+
+#transaccion
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+#icono-sale,#icono-rent
+{
+    height: 80px;
+    width: 80px;
+}
+
+#descripcion
+{
+    width: 80%;
+    height: 40px;
+}
+
+h1,h2
+{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    color: rgb(39, 55, 77);
+    display: flex;
+    justify-content: center;
+}
+
+h1:hover,h2:hover
+{
+    color: #a7a7a7;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th,td
+{
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: center; 
+}
+
+td:hover
+{
+    transition: background-color .5s;   
+    background-color: rgb(101, 100, 124);
+}
+
+th
+{
+    text-transform: capitalize;
+}
+
+.rowPar
+{
+    background-color: #ddd;
+}
+
+#alta,#cancelar,#eliminar
+{
+    border-style: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 5%;
+    color: #ccc;
+}
+
+#alta:hover,#cancelar:hover,#eliminar:hover
+{
+    background-color: #8c0404;
+}
+
+#alta
+{
+    background-color: rgb(39, 55, 77);
+}
+
+#cancelar
+{
+    background-color: rgb(157, 178, 191);
+}
+
+#eliminar
+{
+    background-color: rgb(241, 90, 89);
+}
+
+@font-face 
+{
+    font-family: 'Bebas Neue', sans-serif;
+    src: url(../fonts/BebasNeue-Regular.ttf); 
+}
+
+.formulario
+{
+    font-family:'Bebas Neue',sans-serif;
+    margin: 0 auto;
+ 
+}
+.form
+{
+    background: url(../imagenes/form.jpg);
+    background-position: top;
+    background-attachment: contain;
+    background-size: cover; 
+}
+
+
+form
+{
+    background: #F7F7F7;
+}
+
+p
+{
+    font-family:'Bebas Neue',sans-serif;
+}
+
+#modal,#modal-eliminar
+{
+    position: fixed;
+    margin: auto;
+    padding: 30px;
+    border-radius: 2%;
+    background-color: rgb(157, 178, 191);
+    border: 5px solid #ccc;
+}
+
+#cerrar,#cancelar-eliminar,#aceptar-eliminar
+{
+    position: relative;
+    left: 10px;
+    border-style: hidden;
+    background-color:rgb(227, 244, 244);
+    font-size: 20px;
+    font-family:'Bebas Neue',sans-serif;
+    text-transform: capitalize;
+}
+
+.seccion-tabla
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carga-spinner
+{
+    position: fixed;
+    margin: auto;
+    font-size: 50px;
+    border: 5px solid #ccc;
+    height: 25%;
+    width: 25%;
+    background-color: rgb(157, 178, 191);
+}
+
+#mensaje
+{
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+}
+
+#circulo
+{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 910px)
+{
+    .seccion-tabla
+    {
+        font-size: small;
+    }
+    #tabla
+    {
+        width: 100px;
+        position: relative;
+        right: 45%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .seccion-tabla
+    {
+        font-size: small;
+        height: 5%;
+        width: 5%;
+    }
+    h2
+    {
+        position: relative;
+        left: 300px;
+    }
+ 
+}
+
+@media screen and (max-width: 600px)
+{
+    .seccion-tabla
+    {
+        font-size: small;
+    }
+
+}
+

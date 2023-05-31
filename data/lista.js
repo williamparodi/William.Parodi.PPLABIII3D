@@ -1,0 +1,42 @@
+export const anuncios = [
+    {
+        id: 1,
+        nombre: "Clark",
+        alias: "Superman",
+        editorial: "DC",
+        fuerza:40,
+        arma: "Armadura",
+    },
+    {
+        id: 2,
+        nombre: "pepe",
+        alias: "elastickman",
+        editorial: "Marvel",
+        fuerza:4,
+        arma: "Escudo",
+    },
+    {
+        id: 3,
+        nombre: "juan",
+        alias: "Power",
+        editorial: "DC",
+        fuerza:40,
+        arma: "Escudo",
+    },
+    {
+        id: 1,
+        nombre: "Lopez",
+        alias: "Linterna",
+        editorial: "DC",
+        fuerza:100,
+        arma: "Armadura",
+    },
+    {
+        id: 1,
+        nombre: "Lalo",
+        alias: "Bataman",
+        editorial: "Marvel",
+        fuerza:800,
+        arma: "Armadura",
+    },
+];

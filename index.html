@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/scrips.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <title>Super Heroes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img id="logo"src="./imagenes/logo.png" alt="">
+        </div>
+            <nav>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./anuncios.html">Anuncios</a></li>
+                <li><a href="./blogs.html">Blogs</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>   
+            </nav>
+    </header>
+    <main>
+        <section class="formulario">
+            <h1>Crud Heroes</h1>
+            <form>
+                <fieldset class="form">
+                    <legend>Informacion del SuperHeroe</legend>
+                    <p>
+                        <p>Nombre:</p>
+                        <input id="nombre" type="text" name="txtNombre" placeholder="Ingrese nombre" autocomplete="off" required/>
+                    </p>
+                    <p>
+                        <p>Alias</p>
+                        <input id="alias" type="text" name="txtAlias" placeholder="Ingrese alter-ego" autocomplete="off" required/>
+                    </p>
+                    <fieldset id="Editorial">
+                        <legend>Editorial:</legend>
+                        <p>Marvel</p>
+                        <!-- <img id="icono-sale" src="./imagenes/for-sale-icon.svg" alt=""> -->
+                        <input type="radio" name="rdoEditorial" value="Marvel" checked/>
+                        <p>DC</p>
+                        <!-- <img id="icono-rent" src="./imagenes/for-rent-icon.svg" alt=""> -->
+                        <input type="radio" name="rdoEditorial" value="DC"/>
+                        <br>
+                    </fieldset>
+                    <p>Fuerza</p>
+                    <p>
+                        <input type="range" name="rangeFuerza" placeholder="Fuerza" min="1" max="1000" value="1000" required/>
+                    </p>
+                    <p>Arma</p>
+                    <select name="selectArma" id="arma">
+                        <option value="Armadura">Armadura</option>
+                        <option value="Espada" selected >Espada</option><!--Aparace por defeault-->
+                        <option value="Martillo">Martillo</option>
+                        <option value="Arma de Fuego">Arma de fuego</option>
+                        <option value="Flechas">Flechas</option>
+                    </select>
+                    <div id="ventana">
+                        <dialog id="modal">
+                            <p>Error</p>
+                            <img src="./imagenes/circle-exclamation-solid.svg">
+                            <p id="mensaje-error"></p>
+                            <input id="cerrar" type="button" name="cerrar" value="cerrar"></button>
+                        </dialog>
+                    </div>
+                    <div class="botones">
+                        <input id="alta" type="submit" name="GuardarForm" value="Guardar"/>
+                        <dialog id="modal-eliminar">
+                            <p>Eliminar</p>
+                            <img src="./imagenes/trash-solid.svg">
+                            <p id="mensaje-eliminar"></p>
+                            <input id="aceptar-eliminar" type="button" name="aceptar" value="aceptar"></button>
+                            <input id="cancelar-eliminar" type="button" name="cancelar" value="cancelar"></button>
+                        </dialog>
+                        <input id="eliminar" type="hidden" name="Eliminar" value="Eliminar Anuncio"/>
+                        <input id="cancelar" type="button" name="Cancelar" value="Cancelar"/>
+                        <input type="hidden" name="txtId"/>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section class="seccion-tabla">
+            <div id="tabla"></div>
+        </section>
+        <div class="spinner">
+            <dialog id="carga-spinner">
+                <p id="mensaje"></p>
+                <div id="circulo"><i class="fa-solid fa-arrows-spin fa-spin fa-2xl"></i></div>
+            </dialog>
+        </div>
+    </main>
+</body>
+</html>

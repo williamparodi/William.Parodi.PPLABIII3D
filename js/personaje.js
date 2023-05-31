@@ -22,10 +22,15 @@ export class Personaje
        this.id = value;  
    }
 
+   get Fuerza()
+   {
+    return this.fuerza;
+   }
+
    set Fuerza(value)
    {
         const max = 1000;
-        if(!Array.prototype.length(value)<=max)
+        if(value <= max)
         {
             this.fuerza = value;
         }

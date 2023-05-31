@@ -13,9 +13,7 @@ const crearCabecera=(data)=>
 {
     const $thead = document.createElement("thead");
     const $tr = document.createElement("tr");
-    $tr.style.setProperty("background-color","rgb(157, 178, 191)");
-    $tr.style.setProperty("font-size","25");
-    $tr.style.setProperty("font-family","cursive");
+    
     for (const key in data) 
     {
       if (key === "id") continue;

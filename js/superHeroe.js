@@ -67,7 +67,7 @@ export class SuperHeroe extends Personaje
         }
         else
         {
-            this.Editorial = value;
+            this.Editorial = "sin";
         }
         
    }

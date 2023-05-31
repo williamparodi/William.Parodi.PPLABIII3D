@@ -32,7 +32,7 @@ export function validarForm(formulario)
 
     if(validarNumeros(formulario.rangeFuerza.value) 
         && validarLetras(formulario.txtNombre.value)
-        && validarLetras(formulario.txtAlias.value)
+       && validarLetras(formulario.txtAlias.value)
         && validarLetras(formulario.selectArma.value))
     {
         retorno = true;

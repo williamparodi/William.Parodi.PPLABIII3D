@@ -105,16 +105,16 @@ window.addEventListener("click",(e) =>
         if (txtId.value === "") 
         {
           console.log("nueva..");
-          const nuevoSuperHeroe = new SuperHeroe(0,txtNombre.value,parseInt(rangeFuerza.value),txtAlias.value,selectArma.value,
-            rdoEditorial.value);
+          const nuevoSuperHeroe = new SuperHeroe(0,txtNombre.value,parseInt(rangeFuerza.value),txtAlias.value,
+          rdoEditorial.value,selectArma.value);
           muestraModalSpinner("Ingresando nuevo anuncio");
           handlerCreate(nuevoSuperHeroe);
         } 
         else 
         {
           console.log("update");
-          const superHeroeModificado = new SuperHeroe(parseInt(txtId.value),txtNombre.value,parseInt(rangeFuerza.value),txtAlias.value,selectArma.value,
-            rdoEditorial.value);
+          const superHeroeModificado = new SuperHeroe(parseInt(txtId.value),txtNombre.value,parseInt(rangeFuerza.value),txtAlias.value,rdoEditorial.value,
+          selectArma.value);
           muestraModalSpinner("Modificando anuncio");
           handlerUpdate(superHeroeModificado);
           resetBotones();
